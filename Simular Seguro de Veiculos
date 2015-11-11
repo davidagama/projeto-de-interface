@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simular Seguro de Veiculos</title>
+</head>
+
+<body>
+<header id="cabecalho">
+
+<h1><strong>Agende uma visita do consultor</strong></h1>
+
+
+<br />
+<br />
+
+<p>
+<form id="agendar_visita" ><fieldset>
+<legend>Dados para o agendamento</legend>
+
+<label >Nome cmpleto*:<input type="text" height="70" name="nome" required="required" max="50" min="30" autofocus="autofocus" placeholder="Digite o nome completo" />
+</label></p>
+
+<p>
+<label>CPF
+<input type="text" name="cpf" id="cpf" size="9" maxlength="9" onkeyup="tabAutom(this);" value=""  height="70" title="cpf"/>&nbsp;-&nbsp;<input type="text" id="ccpf" name="ccpf" size="2" maxlength="2" value="" title="Complemento do cpf" />
+</label></p>
+<p>
+<label>Telefone Residencial:*
+ <input type="tel" name="ttelefone" id="ctelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}$" maxlength="14" placeholder="(xx)xxxx-xxxx" title="(21)1234-1245" required="required"/></label></p>
+ <p><label>Telefone Celular:<input type="tel" name="ttelefone" id="ctelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{5}$" maxlength="14" placeholder="(xx)xxxxx-xxxx" title="(21)12345-1245"/></label></p>
+</fieldset>
+</form>
+
+
+
+
+
+</body>
+</html>
