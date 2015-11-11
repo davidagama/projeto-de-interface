@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simular Seguro de Viagens</title>
+</head>
+
+<body>
+
+<fieldset id="seguro_viagem"><legend>Simular Seguro de viagens</legend><br />
+
+<legend>Quem irá viajar?</legend>
+
+<label><input type="radio" name="rpergunta" id="ivoce" autofocus="autofocus" value="você" checked="checked" />Você</label><br />
+<label><input type="radio" name="rpergunta" id="ifamilia"  value="você e sua família" />Você e sua família</label><br>
+<label><input type="radio" name="rpergunta" id="ioutros"  value="outras pessoas" />Outras pessoas</label><br />
+<br />
+<label>
+Motivo:
+
+ <select name="motivo_da_viagem" size="1" autofocus="autofocus"  required="required"  />
+         	  <option value="Selecione">Selecione</option><br />
+              <option value="Negócios">Negócios</option><br/>
+        	  <option value="Estudos"  >Estudos</option><br/>
+              <option value="Lazer"  >Lazer</option><br/>
+              <option value="Outros"  >Outros</option>
+               </select></label>  
+              
+<br />
+<br />
+<label>Selecione o Destino da viagem
+
+<select name="destino_da_viagem" required="required"  placeholder="Selecione o destino da viagem" autofocus="autofocus" />
+         	  <option value="Selecione">Selecione</option><br />
+              <option value="Acre" >Acre</option><br />
+        	  <option value="Alagoas"  >Alagoas</option><br />
+              <option value="Amapá"  >Amapá</option><br />
+              <option value="Amazonas"  >Amazonas</option><br />
+              <option value="Bahia"  >Bahia</option><br />
+              <option value="Ceará"  >Ceará</option><br />
+              <option value="Distrito Federal"  >Distrito Federal</option><br />
+              <option value="Espírito Santo"  >Espírito Santo</option><br />
+              <option value="Goiás"  >Goiás</option><br />
+              <option value="Maranhão"  >Maranhão</option><br />
+              <option value="Mato Grosso"  >Mato Grosso</option><br />
+              <option value="Mato Grosso do Sul"  >Mato Grosso do Sul</option><br />
+              <option value="Minas Gerais "  >Minas Gerais</option><br />
+              <option value="Pará"  >Pará</option><br />
+              <option value="Paraíba"  >Paraíba</option><br />
+              <option value="Paraná"  >Paraná</option><br />
+              <option value="Pernambuco"  >Pernambuco</option><br />
+              <option value="Piauí"  >Piauí</option><br />
+              <option value="Rio de Janeiro"  >Rio de Janeiro</option><br />
+              <option value="Rio Grande do Norte"  >Rio Grande do Norte</option><br />
+              <option value="Rio Grande do Sul"  >Rio Grande do Sul</option><br />
+              <option value="Rondônia"  >Rondônia</option><br />
+              <option value="Roraima"  >Roraima</option><br />
+              <option value="Santa Catarina"  >Santa Catarina</option><br />
+              <option value="São Paulo"  >São Paulo</option><br />
+              <option value="Sergipe"  >Sergipe</option><br />
+              <option value="Tocantins"> Tocantins</option>
+              
+               </select></label>  
+              
+              <br />
+              <input  align="middle" type="button" value="Confirmar" />
+
+
+</fieldset>
+</body>
+</html>
