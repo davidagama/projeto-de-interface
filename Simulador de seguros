@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Seguradora Forte</title>
 
-
+//Editado em 13-11-15
 <script language="JavaScript">
 <!--
 function gotoPage(varItem)
@@ -22,21 +22,16 @@ function gotoPage(varItem)
       window.location="seguro-de-viagens.html";
       break;
     case 3:
-      window.location="seguro-de-alugueis.html";
-	  break;
-	case 4: 
-		window.location="seguro-para-seus-negocios.html";
-	case 5:
-		window.location="seguro-de-vida.html";
-	case 6:
-		window.location="seguro-de-eventos.html";
-	case 7:
-		window.location="seguro-para-imoveis.html";
+	window.location="seguro-de-vida.html";
+	 break;
+    case 4:
+	window.location="seguro-para-imoveis.html";
+	 break;
   }
 }
 // -->
 </script>
-
+//Fim da edição em 13-11-15
 </head>
 
 <body>
@@ -59,15 +54,14 @@ function gotoPage(varItem)
  <p><label>Selecione o serviço:* 
             
          	 <select name="tipo_de_serviço" lang="pt" size="1" language="javascript" onChange="gotoPage(this.selectedIndex);"  >
+   
+   //Editado em 13-11-15
     <option value="Selecione">Selecione</option><br />
-   <option value="Seguro de Veículos" >Seguro de Veículos</option><br />
+    <option value="Seguro de Veículos" >Seguro de Veículos</option><br />
     <option value="Seguro Viagem" >Seguro Viagem</option><br />
-    <option value="Seguro Aluguel" >Seguro Aluguel</option><br />
-    <option value="Seguro Para Seus Negócios" >Seguro Para Seus Negócios</option><br />
     <option value="Seguro de Vida" >Seguro de Vida</option><br />
-    <option value="Seguro de Eventos" >Seguro de Eventos</option><br />
     <option value="Seguro para Imóveis" >Seguro para Imóveis</option>
-    
+    //Fim da edição em 13-11-15
     </select> </label>  </p>
 
 	</fieldset>
