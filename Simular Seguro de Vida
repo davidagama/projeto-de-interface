@@ -7,6 +7,13 @@
 
 <body>
 <!--editado em 17-11-15 -->
+<br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table>
 <form>
 <fieldset >
 <legend>Para quem é o seguro?</legend>
@@ -17,6 +24,13 @@
 <label><input type="checkbox" name="qfamilia" title="qfamilia" autofocus="autofocus" alt="Filhos"   />Filhos <input type="number"  title="quantidade" name="quantidade" width="5" min="1" autofocus="autofocus" value=" " placeholder="1"></label><br />
 <label><input type="checkbox"  name="esposa" title="esposa" alt="Esposa" />Esposa</label>
 </fieldset>
+<br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table>
 <!--Fim --editado em 17-11-15 -->
 </body>
 </html>
