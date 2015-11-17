@@ -6,5 +6,17 @@
 </head>
 
 <body>
+<!--editado em 17-11-15 -->
+<form>
+<fieldset >
+<legend>Para quem é o seguro?</legend>
+<label><input type="checkbox" autofocus="autofocus" title="voce" name="voce" alt="Você" checked="checked" />Você</label><br />
+<label><input type="checkbox"  title="familia" name="familia" alt="família"  />Família</label></fieldset><br />
+<fieldset>
+<legend>Quais membros da sua família?</legend>
+<label><input type="checkbox" name="qfamilia" title="qfamilia" autofocus="autofocus" alt="Filhos"   />Filhos <input type="number"  title="quantidade" name="quantidade" width="5" min="1" autofocus="autofocus" value=" " placeholder="1"></label><br />
+<label><input type="checkbox"  name="esposa" title="esposa" alt="Esposa" />Esposa</label>
+</fieldset>
+<!--Fim --editado em 17-11-15 -->
 </body>
 </html>
