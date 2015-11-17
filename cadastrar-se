@@ -7,6 +7,10 @@
 
 <body>
  <!--Editado em 17-11-15-->
+ <br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table><br/>
  <form action="controle.php" method="post" id="login" ><fieldset  ><legend>Já é nosso cliente? Faça login!</legend> <p><label>Login*: <input type="text" name="login" value="" autofocus="autofocus"  placeholder="Login" alt="login"/></label></p>
 <p> 
   <label>Senha*: <input type="password" name="senha" value=""  placeholder="Senha"/></label> </p><input type="submit" name="enviar" value="Login"/>
@@ -29,6 +33,10 @@
        <input type="submit" name="cadastrar" value="cadastrar"/> 
        </fieldset>
        </form>
+        <br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table><br/>
 <!--Fim --Editado em 17-11-15-->
 </body>
 </html>
