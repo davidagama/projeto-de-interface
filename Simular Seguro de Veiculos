@@ -12,8 +12,14 @@
 
 
 <br />
-<br />
 
+<br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table>
 <p>
 <form id="agendar_visita" ><fieldset>
 <legend>Dados para o agendamento</legend>
@@ -31,7 +37,13 @@
  <p><label>Telefone Celular:<input type="tel" name="ttelefone" id="ctelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{5}$" maxlength="14" placeholder="(xx)xxxxx-xxxx" title="(21)12345-1245"/></label></p>
 </fieldset>
 </form>
-
+<br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table>
 
 
 
