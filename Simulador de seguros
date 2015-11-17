@@ -5,6 +5,52 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Seguradora Forte</title>
 
+
+</head>
+
+<body>
+
+<header id="cabecalho">
+
+<h1><strong>Seja bem vindo a nossa seguradora!</strong></h1>
+<h2><strong>Faça aqui a sua simulação!</strong></h2>
+
+
+</header>
+<br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table><br/>
+
+
+<fieldset id="simulação"><legend>Simular contrato de serviço</legend>
+	
+	<fieldset id="TipoServiço"><legend>Tipo de Serviço</legend>
+<p>* Campo obrigatório</p>
+
+ <p><label>Selecione o serviço:* 
+            
+         	 <select name="tipo_de_serviço" lang="pt" size="1" language="javascript" onChange="gotoPage(this.selectedIndex);"  >
+   
+   //Editado em 13-11-15
+    <option value="Selecione">Selecione</option><br />
+    <option value="Seguro de Veículos" >Seguro de Veículos</option><br />
+    <option value="Seguro Viagem" >Seguro Viagem</option><br />
+    <option value="Seguro de Vida" >Seguro de Vida</option><br />
+    <option value="Seguro para Imóveis" >Seguro para Imóveis</option>
+    //Fim da edição em 13-11-15
+    </select> </label>  </p>
+
+	</fieldset>
+    </fieldset>
+    
+<br />
+<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table><br/>
+    
+   
+    
 //Editado em 13-11-15
 <script language="JavaScript">
 <!--
@@ -32,46 +78,6 @@ function gotoPage(varItem)
 // -->
 </script>
 //Fim da edição em 13-11-15
-</head>
-
-<body>
-
-<header id="cabecalho">
-
-<h1><strong>Seja bem vindo a nossa seguradora!</strong></h1>
-<h2><strong>Faça aqui a sua simulação!</strong></h2>
-
-
-</header>
-
-
-
-<fieldset id="simulação"><legend>Simular contrato de serviço</legend>
-	
-	<fieldset id="TipoServiço"><legend>Tipo de Serviço</legend>
-<p>* Campo obrigatório</p>
-
- <p><label>Selecione o serviço:* 
-            
-         	 <select name="tipo_de_serviço" lang="pt" size="1" language="javascript" onChange="gotoPage(this.selectedIndex);"  >
-   
-   //Editado em 13-11-15
-    <option value="Selecione">Selecione</option><br />
-    <option value="Seguro de Veículos" >Seguro de Veículos</option><br />
-    <option value="Seguro Viagem" >Seguro Viagem</option><br />
-    <option value="Seguro de Vida" >Seguro de Vida</option><br />
-    <option value="Seguro para Imóveis" >Seguro para Imóveis</option>
-    //Fim da edição em 13-11-15
-    </select> </label>  </p>
-
-	</fieldset>
-    </fieldset>
-    
-
-    
-   
-    
-
 
 </body>
 </html>
