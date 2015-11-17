@@ -6,5 +6,29 @@
 </head>
 
 <body>
+ <!--Editado em 17-11-15-->
+ <form action="controle.php" method="post" id="login" ><fieldset  ><legend>Já é nosso cliente? Faça login!</legend> <p><label>Login*: <input type="text" name="login" value="" autofocus="autofocus"  placeholder="Login" alt="login"/></label></p>
+<p> 
+  <label>Senha*: <input type="password" name="senha" value=""  placeholder="Senha"/></label> </p><input type="submit" name="enviar" value="Login"/>
+  </fieldset>
+   </form>
+   
+   
+ <form action="controle.php" method="post"><fieldset>
+   <legend>Ainda não é cliente? Cadastre-se!</legend>
+   <p><label>Nome Completo*: <input type="text" value="" required="required" placeholder="Nome Completo" autofocus="autofocus" /></label></p>
+   <p>
+     <label>E-mail*:   
+         <input type="text" value="" required="required" placeholder="E-mail" autofocus="autofocus" /></label></p>
+    <label>Login*: 
+      <input type="text" name="login" value="" /></label><br /> <label>Senha*:
+      <input type="password" name="senha" value="" /></label><br />
+      <label>Confirme a Senha*:
+      <input type="password" name="Csenha" value="" /></label><br /> 
+      <br /> 
+       <input type="submit" name="cadastrar" value="cadastrar"/> 
+       </fieldset>
+       </form>
+<!--Fim --Editado em 17-11-15-->
 </body>
 </html>
