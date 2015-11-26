@@ -6,24 +6,29 @@
 </head>
 
 <body>
-<!--editado em 17-11-15 -->
+<!--editado em 26-11-15 -->
 <br />
+<h1>Simulador de seuro de vida</h1>
 <link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
 <a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
 <td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
 </table>
-<form>
+<form ><fieldset>
 <fieldset >
 <legend>Para quem é o seguro?</legend>
 <label><input type="checkbox" autofocus="autofocus" title="voce" name="voce" alt="Você" checked="checked" />Você</label><br />
 <label><input type="checkbox"  title="familia" name="familia" alt="família"  />Família</label></fieldset><br />
 <fieldset>
 <legend>Quais membros da sua família?</legend>
-<label><input type="checkbox" name="qfamilia" title="qfamilia" autofocus="autofocus" alt="Filhos"   />Filhos <input type="number"  title="quantidade" name="quantidade" width="5" min="1" autofocus="autofocus" value=" " placeholder="1"></label><br />
+<label><input type="checkbox" name="qfamilia" title="qfamilia" autofocus="autofocus" alt="Filhos"   />Filhos <input type="number" id="id1"  title="quantidade" name="quantidade" width="5" min="1" autofocus="autofocus" value=" " placeholder="0"></label><br />
 <label><input type="checkbox"  name="esposa" title="esposa" alt="Esposa" />Esposa</label>
-</fieldset>
+</fieldset></fieldset>
+
+</form>
+<button onclick="myFunction()">Confirma</button>
+<br />
 <br />
 <link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
 <a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
@@ -31,6 +36,21 @@
 <td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
 </table>
-<!--Fim --editado em 17-11-15 -->
+<h2>Valor total:</h2>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "R$ 600,00";
+		
+    } 
+} 
+</script>
+<a href="cadastrar-se.html" alt="contratar"target="_self">Clique Aqui para contratar</a>
+<!--Fim --editado em 26-11-15 -->
 </body>
 </html>
