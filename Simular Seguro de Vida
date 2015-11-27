@@ -1,14 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Simular Seguro de Vida</title>
 </head>
 
-<body>
-<!--editado em 26-11-15 -->
-<br />
-<h1>Simulador de seuro de vida</h1>
+<body><header id="cabecalho">
+<h1>Simulador de seguro de vida</h1>
+</header>
 <link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
 <a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
@@ -36,8 +35,11 @@
 <td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
 </table>
-<h2>Valor total:</h2>
+
+<table border="1" bordercolor="#999999" cellspacing="0"><td>
+<h2>Valor Total:</h2></td><th>
 <p id="demo"></p>
+<a href="cadastrar-se.html" id="contratar"></a></th></table>
 
 <script>
 function myFunction() {
@@ -46,11 +48,10 @@ function myFunction() {
         document.getElementById("demo").innerHTML = inpObj.validationMessage;
     } else {
         document.getElementById("demo").innerHTML = "R$ 600,00";
-		
+		document.getElementById("contratar").innerHTML = "Contratar";
     } 
 } 
 </script>
-<a href="cadastrar-se.html" alt="contratar"target="_self">Clique Aqui para contratar</a>
-<!--Fim --editado em 26-11-15 -->
+
 </body>
 </html>
