@@ -1,21 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Simular Seguro de Viagens</title>
 </head>
 
-<body>
-<!--Editado em 17-11-15-->
+<body><header id="cabecalho">
+<h1>Simular Seguro de Viagens</h1>
+</header>
 <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
+<link id="links" />
+
+<table align="center"  bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
 <a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
 <td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
 </table>
-<!--Fim --Editado em 17-11-15-->
-<fieldset id="seguro_viagem"><legend>Simular Seguro de viagens</legend><br />
+<form action="seguro-de-viagens.html" method="post" id="" >
+<fieldset id="seguro_viagem" ><legend>Simular Seguro de viagens</legend><br />
 
 <legend>Quem irá viajar?</legend>
 
@@ -26,7 +29,7 @@
 <label>
 Motivo:
 
- <select name="motivo_da_viagem" size="1" autofocus="autofocus"  required="required"  />
+ <select name="motivo_da_viagem" size="1" autofocus="autofocus" id="id1"  required="required"  onChange="gotoMotivo(this.selectedIndex);"  />
          	  <option value="Selecione">Selecione</option><br />
               <option value="Negócios">Negócios</option><br/>
         	  <option value="Estudos"  >Estudos</option><br/>
@@ -38,7 +41,7 @@ Motivo:
 <br />
 <label>Selecione o Destino da viagem
 
-<select name="destino_da_viagem" required="required"  placeholder="Selecione o destino da viagem" autofocus="autofocus" />
+<select name="destino_da_viagem" required="required"  placeholder="Selecione o destino da viagem" autofocus="autofocus" onChange="gotoLugar(this.selectedIndex);"  />
          	  <option value="Selecione">Selecione</option><br />
               <option value="Acre" >Acre</option><br />
         	  <option value="Alagoas"  >Alagoas</option><br />
@@ -71,17 +74,162 @@ Motivo:
                </select></label>  
               
               <br />
-              <input  align="middle" type="button" value="Confirmar" />
-
+             
+<table border="1" bordercolor="#999999" cellspacing="0"><td>
+<h2>Valor Total:</h2></td><th>
+<p id="demo"></p>
+<a href="cadastrar-se.html" id="contratar"></a></th></table>
 
 </fieldset>
-<!--Editado em 17-11-15-->
+
+</form>
+
 <br />
 <link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
 <a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
 <td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
-</table><!--Fim --Editado em 17-11-15-->
+</table>
+
+<script language="JavaScript">
+var r1 = 0;
+var r2 = 0;
+function gotoMotivo(varItem)
+{var num1= 0;
+  switch(varItem)
+  {
+    case 0:
+	  document.getElementById("demo").innerHTML = 0;
+      break;
+    case 1:
+      
+	  num1= 60;
+      break;
+    case 2:
+      
+	  num1= 70;
+      break;
+   	case 3:
+		
+		num1= 80;
+		 break;
+	case 4:
+	
+	num1= 90;
+		 break;
+  }
+  r1 = num1;
+  
+   
+}
+
+ var gotoLugar = function(varItem)
+ {var num2= 0;
+ 
+  switch(varItem)
+  {
+    case 0:
+	  document.getElementById("demo").innerHTML = 0;
+      break;
+    case 1:
+      
+	  num2= 70;
+     break;
+    case 2:
+      
+	  num2= 70;
+      break;
+   	case 3:
+		
+		num2= 80;
+		 break;
+	case 4:
+	num2= 60;
+		 break;
+		 case 5:
+	  num2= 60;
+		break;
+		 case 6:
+	  num2= 60;
+		 case 7:
+	  num2= 60;
+		break;
+		 case 8:
+	  num2= 60;
+		 break;
+		 case 9:
+	  num2= 70;
+		 case 10:
+	  num2= 70;
+	  break;
+		 case 11:
+	  num2= 70;
+	  break;
+		 case 12:
+	  num2= 70;
+	  
+		 break;
+		 case 13:
+		num2= 80;
+		break;
+		 case 14:
+		num2= 80;
+		break;
+		 case 15:
+		num2= 80;
+		break;
+		 case 16:
+		num2= 80;
+		break;
+		 case 17:
+		num2= 80;
+		break;
+		 case 18:
+		num2= 80;
+		 break;
+		 case 19:
+	num2= 90;
+	break;
+		 case 20:
+	num2= 90;
+		 case 21:
+	num2= 90;
+	break;
+		 case 22:
+	num1= 90;
+		 break;
+		 case 23:
+	num2= 90;
+	break;
+		 case 24:
+	num2= 90;
+		 break;
+		 case 25:
+	num2= 100;
+		 break;
+		 case 26:
+	num2= 100;
+		 break;
+		case 27:
+	num2= 100;
+		 break; 
+		
+  }
+  
+  r2 = num2;
+  var rs= r1 + r2;
+		var txt= rs.toString();
+		 
+		 
+		 document.getElementById("demo").innerHTML = "R$ " + txt;
+  document.getElementById("contratar").innerHTML = "Contratar";
+ 
+
+}
+
+</script>
+
 </body>
+
 </html>
