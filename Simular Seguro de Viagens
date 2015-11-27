@@ -19,7 +19,7 @@
 </table>
 <form action="seguro-de-viagens.html" method="post" id="" >
 <fieldset id="seguro_viagem" ><legend>Simular Seguro de viagens</legend><br />
-
+<p>* Campo Obrigatório</p>
 <legend>Quem irá viajar?</legend>
 
 <label><input type="radio" name="rpergunta" id="ivoce" autofocus="autofocus" value="você" checked="checked" />Você</label><br />
@@ -27,7 +27,7 @@
 <label><input type="radio" name="rpergunta" id="ioutros"  value="outras pessoas" />Outras pessoas</label><br />
 <br />
 <label>
-Motivo:
+Motivo:*
 
  <select name="motivo_da_viagem" size="1" autofocus="autofocus" id="id1"  required="required"  onChange="gotoMotivo(this.selectedIndex);"  />
          	  <option value="Selecione">Selecione</option><br />
@@ -39,7 +39,7 @@ Motivo:
               
 <br />
 <br />
-<label>Selecione o Destino da viagem
+<label>Selecione o Destino da viagem:*
 
 <select name="destino_da_viagem" required="required"  placeholder="Selecione o destino da viagem" autofocus="autofocus" onChange="gotoLugar(this.selectedIndex);"  />
          	  <option value="Selecione">Selecione</option><br />
