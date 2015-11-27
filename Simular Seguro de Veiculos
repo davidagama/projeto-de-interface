@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Simular Seguro de Veiculos</title>
@@ -9,7 +9,7 @@
 <header id="cabecalho">
 
 <h1><strong>Agende uma visita do consultor</strong></h1>
-
+</header>
 
 <br />
 
@@ -21,7 +21,7 @@
 </td>
 </table>
 <p>
-<form id="agendar_visita" ><fieldset>
+<form id="agendar_visita"  method="post" action="mailto:davi.dgl@hotmail.com"><fieldset>
 <legend>Dados para o agendamento</legend>
 
 <label >Nome cmpleto*:<input type="text" height="70" name="nome" required="required" max="50" min="30" autofocus="autofocus" placeholder="Digite o nome completo" />
