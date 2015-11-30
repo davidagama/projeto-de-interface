@@ -1,0 +1,162 @@
+<!DOCTYPE html  >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simular seguro para imóveis</title>
+<link rel="stylesheet"  href="_css/estilo.css"/>
+
+</head>
+
+<body>
+
+<div id ="divisao2">
+<header id="cabecalho">
+<h1>Simular Seguro Residencial</h1>
+</header>
+<br /><table  ><td >
+<a href="#Form" alt="Ir para o formulário" title="Ir para o formulário" target="_self" >Ir para o formulário</a>
+</td></table>
+<br />
+<br />
+<br />
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table><br/>
+<form action="seguro-para-imoveis.html" method="post" name="seguroImoveis" title="imoveis" id="imoveis"><a name="Form"></a>
+<fieldset id="seguro_imoveis"><legend>Simular Seguro para Imóveis</legend><br />
+
+<legend>Dados do imóvel a ser segurado</legend>
+<p id="necessario">* Campos obrigatório</p>
+
+<br />
+
+Tipo do imóvel*:
+
+ <select name="tipo_do_imovel"  autofocus="autofocus" title="tipo"  required="required" id="id1" />
+         <label for="imoveis">	  <option value="Selecione">Selecione</option><br />
+              <option value="Casa" >Casa</option><br />
+        	  <option value="Apartamento"  >Apartamento</option><br />
+               </select></label>  
+              
+<br />
+<br />
+<label for="imoveis">Valor do imóvel*:<input type="text" required="required" alt="Valor do imvóvel" placeholder="Digite o valor do imóvel"  title="valor"/>
+
+<label for="imoveis">CEP do imóvel:</td>
+	   <td colspan="2"><input type="text" name="CEP" id="CEP" size="5" maxlength="5" onkeyup="tabAutom(this);" value="" title="cep" title="CEP"/>&nbsp;-&nbsp;<input type="text" id="CCEP" name="CCEP" size="3" maxlength="3" value="" title="Complemento do CEP" /></label>
+
+
+
+              <br />
+              <br />
+              <br />
+              
+<button onclick="myFunction(vari)">Confirma</button><br /><br />
+<table  ><caption>Valor</caption><td>
+<h2>Valor Total:</h2></td><th>
+<p id="demo"></p>
+<a href="cadastrar-se.html" id="contratar"></a></th></table>
+
+</fieldset>
+</form><br />
+
+<p><table  style="text-align:center; position:absolute; width:380px;" ><caption>Garantias</caption>
+						<tr>
+							<th>Garantias
+							
+							
+						</tr>
+						<tr>
+							<td >
+								Mão de obra para consertos de eletrodomésticos e eletroeletrônicos;
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								Serviços de prego e martelo e desentupimentos;
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								Dia da residência, que conta com diversos serviços;
+							</td>
+							
+						</tr>
+						<tr>
+							<td >
+								Mão de obra e materiais básicos para a execução de reparos emergenciais;
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								Indicação de profissionais para manutenção programada e simulador de quantidade de materiais necessários para reforma;
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								Descontos e vantagens em diversos estabelecimentos;
+							</td>
+							
+						</tr>						
+					</table></p>
+                    
+<br />
+
+<nav id="menu"><!-- Área de navegação-->
+<h1> Menu Principal </h1>
+<ul>
+	<li/><a href="index.html" title="Inicio"> Inicio </a>
+	<li/><a href="seguro-de-veiculos.html" title="Seguro de automóveis"  > Automôveis </a>
+	<li/><a href="seguro-para-imoveis.html" title="Seguro Residencial" > Rêsidencial </a>
+	<li/><a href="seguro-de-vida.html" title="Seguro Familiar"> Familiar </a>
+	<li/><a href="seguro-de-viagens.html" title="Seguro de Viagens"> Viagens </a>
+	</ul>
+</nav>
+<footer class="pe">
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table></footer>
+</div>
+
+<script >
+
+function myFunction(vari) {
+    var inpObj = document.getElementById("id1");
+    switch(vari){
+		case 0:
+	if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "R$ 600,00";
+		document.getElementById("contratar").innerHTML = "Contratar";
+    } break;
+	case 1:
+	if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "R$ 600,00";
+		document.getElementById("contratar").innerHTML = "Contratar";
+    } break;
+	case 2:
+	if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "R$ 800,00";
+		document.getElementById("contratar").innerHTML = "Contratar";
+    } 
+	break;
+	}
+} 
+</script>
+</body>
+</html>
