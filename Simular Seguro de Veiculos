@@ -1,52 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html  >
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Simular Seguro de Veiculos</title>
+<link rel="stylesheet"  href="_css/estilo.css"/>
 </head>
 
 <body>
+<div id ="divisao2">
 <header id="cabecalho">
 
-<h1><strong>Agende uma visita do consultor</strong></h1>
+<h1><strong>Agende uma visita do consultor</strong>!</h1>
+
 </header>
 
 <br />
-
 <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+<br />
+<br />
+<table  ><td >
+<a href="#Form" alt="Ir para o formulário" title="Ir para o formulário" target="_self" >Ir para o formulário</a>
+</td></table>
+<br />
+<br />
+<br />
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
-<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
-</table>
+</table><br/>
 <p>
-<form id="agendar_visita"  method="post" action="mailto:davi.dgl@hotmail.com"><fieldset>
+<form id="agendar_visita"  method="post" action="mailto:davi.dgl@hotmail.com" id="agendar" title="agendar"><a name="Form"></a><fieldset>
 <legend>Dados para o agendamento</legend>
-
-<label >Nome cmpleto*:<input type="text" height="70" name="nome" required="required" max="50" min="30" autofocus="autofocus" placeholder="Digite o nome completo" />
+<p id="necessario">* Preenchimento necessário.</p>
+<label for="agendar" >Nome completo*:<input type="text" height="70" name="nome" required="required" max="50" min="30" autofocus="autofocus" placeholder="Digite o nome completo" title="Nome Completo" />
 </label></p>
 
 <p>
-<label>CPF
-<input type="text" name="cpf" id="cpf" size="9" maxlength="9" onkeyup="tabAutom(this);" value=""  height="70" title="cpf"/>&nbsp;-&nbsp;<input type="text" id="ccpf" name="ccpf" size="2" maxlength="2" value="" title="Complemento do cpf" />
+<label for="agendar">CPF*
+  <input  type="text" name="cpf" id="cpf" size="9" maxlength="9" onkeyup="tabAutom(this);" value=""  height="70" title="cpf" required="required" placeholder="XXXXXXXXX"/>&nbsp;-&nbsp;<input type="text" id="ccpf" name="ccpf" size="2" maxlength="2" value="" title="Complemento do cpf" required="required" placeholder="XX" />
 </label></p>
 <p>
-<label>Telefone Residencial:*
- <input type="tel" name="ttelefone" id="ctelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}$" maxlength="14" placeholder="(xx)xxxx-xxxx" title="(21)1234-1245" required="required"/></label></p>
- <p><label>Telefone Celular:<input type="tel" name="ttelefone" id="ctelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{5}$" maxlength="14" placeholder="(xx)xxxxx-xxxx" title="(21)12345-1245"/></label></p>
+<label for="agendar">Telefone Residencial:*
+ <input title="tresidencial" type="tel" name="ttelefone" id="rtelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}$" maxlength="14" placeholder="(xx)xxxx-xxxx" title="(21)1234-1245" required="required"/></label></p>
+ <p><label for="agendar">Telefone Celular:<input title="tcelular" type="tel" name="ttelefone" id="ctelefone" patternern="\([0-9]{2}\) [0-9]{4}-[0-9]{5}$" maxlength="14" placeholder="(xx)xxxxx-xxxx" title="(21)12345-1245"/></label></p>
+<input type="submit" title="enviar" alt="Enviar" placeholder="Enviar" autofocus="autofocus" />
 </fieldset>
+
 </form>
 <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+
+<nav id="menu"><!-- Área de navegação-->
+<h1> Menu Principal </h1>
+<ul>
+	<li/><a href="index.html" title="Inicio"> Inicio </a>
+	<li/><a href="seguro-de-veiculos.html" title="Seguro de automóveis"  > Automôveis </a>
+	<li/><a href="seguro-para-imoveis.html" title="Seguro Residencial" > Rêsidencial </a>
+	<li/><a href="seguro-de-vida.html" title="Seguro Familiar"> Familiar </a>
+	<li/><a href="seguro-de-viagens.html" title="Seguro de Viagens"> Viagens </a>
+	</ul>
+</nav>
+<footer class="pe">
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
-<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
-</table>
+</table></footer>
 
 
-
-
+</div>
 </body>
 </html>
