@@ -1,37 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html  >
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Seguradora Forte</title>
+<title>Seguradora Forte-Selecionar serviço</title>
+<link rel="stylesheet"  href="_css/estilo.css"/>
+
+
+
+
 
 
 </head>
 
 <body>
 
+<div id ="divisao2">
 <header id="cabecalho">
-<h1><strong>Seja bem vindo a Seguradora FORTE!</strong></h1>
+<h1><strong>Seguradora FORTE!</strong></h1>
 <h2><strong>Escolha aqui um serviço e faça a sua simulação!</strong></h2>
 
 
 </header>
+<br /><table  ><td >
+<a href="#Form" alt="Ir para o formulário" title="Ir para o formulário" target="_self" >Ir para o formulário</a>
+</td></table>
 <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
-</td></table><br/>
-
-
-<form action="seguro-de-viagens.html" method="post" id="">
+<br />
+<br />
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table>
+ <br/>
+<form action="seguro-de-viagens.html" method="post" id="simulador">
+<a name="Form"></a>
 <fieldset id="simulação"><legend>Simular contrato de serviço</legend>
 	
 	<fieldset id="TipoServiço"><legend>Tipo de Serviço</legend>
-<p>* Campo obrigatório</p>
+<p id="necessario">* Campo obrigatório</p>
 
- <p><label>Selecione o serviço:* 
+ <p>Selecione o serviço:* 
             
-         	 <select name="tipo_de_serviço" lang="pt" size="1" language="javascript" onChange="gotoPage(this.selectedIndex);"  >
-    <option value="Selecione">Selecione</option><br />
+         	 <select name="tipo_de_serviço" title="tipo" lang="pt" size="1" language="javascript" onChange="gotoPage(this.selectedIndex);"  >
+   <label for="simulador"> <option value="Selecione">Selecione</option><br />
     <option value="Seguro de Veículos" >Seguro de Veículos</option><br />
     <option value="Seguro Viagem" >Seguro Viagem</option><br />
     <option value="Seguro de Vida" >Seguro de Vida</option><br />
@@ -43,17 +54,27 @@
     </fieldset>
   </form>  
 
-    
-<br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
-</td></table><br/>
-    
+   <br />
+
    
-    
-//Editado em 13-11-15
+    <nav id="menu"><!-- Área de navegação-->
+<h1> Menu Principal </h1>
+<ul>
+	<li/><a href="index.html" title="Inicio"> Inicio </a>
+	<li/><a href="seguro-de-veiculos.html" title="Seguro de automóveis"  > Automôveis </a>
+	<li/><a href="seguro-para-imoveis.html" title="Seguro Residencial" > Rêsidencial </a>
+	<li/><a href="seguro-de-vida.html" title="Seguro Familiar"> Familiar </a>
+	<li/><a href="seguro-de-viagens.html" title="Seguro de Viagens"> Viagens </a>
+	</ul>
+</nav>
+<footer class="pe">
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table>
+</footer>
+</div>
 <script language="JavaScript">
-<!--
+
 function gotoPage(varItem)
 {
   switch(varItem)
@@ -67,17 +88,15 @@ function gotoPage(varItem)
     case 2:
       window.location="seguro-de-viagens.html";
       break;
-    case 3:
-	window.location="seguro-de-vida.html";
-	 break;
-    case 4:
-	window.location="seguro-para-imoveis.html";
-	 break;
+   	case 3:
+		window.location="seguro-de-vida.html";
+		 break;
+	case 4:
+		window.location="seguro-para-imoveis.html";
+		 break;
   }
 }
-// -->
-</script>
-//Fim da edição em 13-11-15
 
+</script>
 </body>
 </html>
