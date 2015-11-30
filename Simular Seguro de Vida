@@ -7,7 +7,92 @@
 
 <body><header id="cabecalho">
 <h1>Simulador de seguro de vida</h1>
-</header>
+</header><!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simular Seguro de Vida</title>
+<link rel="stylesheet"  href="_css/estilo.css"/>
+
+</head>
+
+<body>
+<div id ="divisao2">
+<header id="cabecalho">
+<h1>Simular seguro de vida</h1>
+</header><br/><br/><br/>
+<table  ><td >
+<a href="#Form" alt="Ir para o formulário" title="Ir para o formulário" target="_self" >Ir para o formulário</a>
+</td></table>
+<br />
+<br />
+<br />
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table><br/>
+
+<form title="familiar" id="familiar" action="" method="get" ><a name="Form"></a><fieldset><legend>Seguro de vida</legend>
+<fieldset >
+<legend>Para quem é o seguro?</legend>
+<input type="checkbox" autofocus="autofocus" title="voce" name="voce" alt="Você" checked="checked" /><label for="familiar">Você</label><br />
+<input type="checkbox"  title="familia" name="familia" alt="família"  /><label for="familiar">Família</label></fieldset><br />
+<fieldset>
+<legend>Quais membros da sua família?</legend>
+<input type="checkbox" name="qfamilia" title="filhos" autofocus="autofocus" alt="Filhos"   /><label for="familiar">Filhos <input type="number" id="id1"  title="quantidade" name="quantidade" width="5" min="1" autofocus="autofocus" value=" " placeholder="0"></label><br />
+<input type="checkbox"  name="esposa" title="esposa" alt="Esposa" /><label for="familiar">Esposa</label>
+</fieldset>
+
+</fieldset>
+</form>
+
+<br />
+<br />
+<br /><br />
+<button onclick="myFunction()">Confirma</button><br />
+<table  ><caption>Valor</caption><td>
+<h2>Valor Total:</h2></td><th>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "R$ 600,00";
+		document.getElementById("contratar").innerHTML = "Contratar";
+    } 
+} 
+</script>
+<nav id="menu"><!-- Área de navegação-->
+<h1> Menu Principal </h1>
+<ul>
+	<li/><a href="index.html" title="Inicio"> Inicio </a>
+	<li/><a href="seguro-de-veiculos.html" title="Seguro de automóveis"  > Automôveis </a>
+	<li/><a href="seguro-para-imoveis.html" title="Seguro Residencial" > Rêsidencial </a>
+	<li/><a href="seguro-de-vida.html" title="Seguro Familiar"> Familiar </a>
+	<li/><a href="seguro-de-viagens.html" title="Seguro de Viagens"> Viagens </a>
+	</ul>
+</nav>
+
+<a href="cadastrar-se.html" id="contratar"></a></th></table>
+<footer class="pe">
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table></footer>
+</div>
+
+
+
+</body>
+</html>
+
 <link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
 <a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
