@@ -1,36 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html >
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Simular Seguro de Viagens</title>
+
+<link rel="stylesheet"  href="_css/estilo.css"/>
+
+
 </head>
 
-<body><header id="cabecalho">
-<h1>Simular Seguro de Viagens</h1>
-</header>
+<body>
+<div id ="divisao2">
+<header id="cabecalho">
+<h1>Simular seguro de viagens</h1>
+</header><br/><br/><br/>
+<table  ><td >
+<a href="#Form" alt="Ir para o formulário" title="Ir para o formulário" target="_self" >Ir para o formulário</a>
+</td></table>
 <br />
-<link id="links" />
+<br />
+<br />
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+</td>
+</table><br/>
 
-<table align="center"  bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
-</td>
-<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
-</td>
-</table>
-<form action="seguro-de-viagens.html" method="post" id="" >
+<form action="seguro-de-viagens.html" method="post" id="viagem" >
+<a name="Form"></a>
 <fieldset id="seguro_viagem" ><legend>Simular Seguro de viagens</legend><br />
-<p>* Campo Obrigatório</p>
-<legend>Quem irá viajar?</legend>
 
-<label><input type="radio" name="rpergunta" id="ivoce" autofocus="autofocus" value="você" checked="checked" />Você</label><br />
-<label><input type="radio" name="rpergunta" id="ifamilia"  value="você e sua família" />Você e sua família</label><br>
-<label><input type="radio" name="rpergunta" id="ioutros"  value="outras pessoas" />Outras pessoas</label><br />
+<legend>Quem irá viajar?*</legend>
+
+<input type="radio" name="rpergunta" title="Você" id="ivoce" autofocus="autofocus" value="você" checked="checked" /><label for="viagem">Você</label><br />
+<input type="radio" name="rpergunta" title="você e sua família" id="ifamilia"  value="você e sua família" /><label for="viagem">Você e sua família</label><br>
+<input type="radio" name="rpergunta" title="Outros" id="ioutros"  value="outras pessoas" /><label for="viagem">Outras pessoas</label><br />
 <br />
-<label>
-Motivo:*
 
- <select name="motivo_da_viagem" size="1" autofocus="autofocus" id="id1"  required="required"  onChange="gotoMotivo(this.selectedIndex);"  />
-         	  <option value="Selecione">Selecione</option><br />
+Motivo:
+<p id="necessario2">* Preenchimento necessário.</p>
+ <select name="motivo_da_viagem" size="1" autofocus="autofocus" id="id1"  title="motivo" required="required"  onChange="gotoMotivo(this.selectedIndex);"  />
+         	  <label for="viagem"><option value="Selecione">Selecione</option><br />
               <option value="Negócios">Negócios</option><br/>
         	  <option value="Estudos"  >Estudos</option><br/>
               <option value="Lazer"  >Lazer</option><br/>
@@ -39,10 +50,10 @@ Motivo:*
               
 <br />
 <br />
-<label>Selecione o Destino da viagem:*
-
-<select name="destino_da_viagem" required="required"  placeholder="Selecione o destino da viagem" autofocus="autofocus" onChange="gotoLugar(this.selectedIndex);"  />
-         	  <option value="Selecione">Selecione</option><br />
+Selecione o Destino da viagem:*
+<p id="necessario">* Preenchimento necessário.</p>
+<select name="destino_da_viagem" required="required"  placeholder="Selecione o destino da viagem" title="destino" autofocus="autofocus" onChange="gotoLugar(this.selectedIndex);"  />
+         	  <label for="viagem"><option value="Selecione">Selecione</option><br />
               <option value="Acre" >Acre</option><br />
         	  <option value="Alagoas"  >Alagoas</option><br />
               <option value="Amapá"  >Amapá</option><br />
@@ -74,8 +85,8 @@ Motivo:*
                </select></label>  
               
               <br />
-             
-<table border="1" bordercolor="#999999" cellspacing="0"><td>
+             <br />	
+<table  ><caption>Valor</caption><td>
 <h2>Valor Total:</h2></td><th>
 <p id="demo"></p>
 <a href="cadastrar-se.html" id="contratar"></a></th></table>
@@ -85,13 +96,24 @@ Motivo:*
 </form>
 
 <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
+<nav id="menu"><!-- Área de navegação-->
+  <h1> Menu Principal </h1>
+<ul>
+	<li/><a href="index.html" title="Inicio"> Inicio </a>
+	<li/><a href="seguro-de-veiculos.html" title="Seguro de automóveis"  > Automôveis </a>
+	<li/><a href="seguro-para-imoveis.html" title="Seguro Residencial" > Rêsidencial </a>
+	<li/><a href="seguro-de-vida.html" title="Seguro Familiar"> Familiar </a>
+	<li/><a href="seguro-de-viagens.html" title="Seguro de Viagens"> Viagens </a>
+	</ul>
+</nav>
+<footer class="pe">
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
 </td>
-<td><a href="simulador-de-seguro.html" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
+<td><a href="simulador-de-seguro.html" title="Escolher Outro Serviço" alt="Escolher Outro Serviço" target="_self" >Escolher Outro Serviço</a>
 </td>
-</table>
-
+</table></footer>
+</div>
 <script language="JavaScript">
 var r1 = 0;
 var r2 = 0;
@@ -233,3 +255,5 @@ function gotoMotivo(varItem)
 </body>
 
 </html>
+
+
