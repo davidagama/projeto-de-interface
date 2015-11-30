@@ -1,42 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html >
+<html  lang="pt-br">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cadastrar-se</title>
+<link rel="stylesheet"  href="_css/estilo.css"/>
+
 </head>
 
 <body>
- <!--Editado em 17-11-15-->
- <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
-</td></table><br/>
- <form action="controle.php" method="post" id="login" ><fieldset  ><legend>Já é nosso cliente? Faça login!</legend> <p><label>Login*: <input type="text" name="login" value="" autofocus="autofocus"  placeholder="Login" alt="login"/></label></p>
+<div id ="divisao2">
+<header id="cabecalho">
+<h1>Faça login ou cadastre-se:</h1>
+</header>
+<br />
+<br />
+
+
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table>
+ <br/>
+ <!-- acrescentado em 13-11-15-->
+<form  class="login" action="index.html" method="post" id="login"  title="Logar"><fieldset class="login" ><legend>Já é nosso cliente? Faça login!</legend> <p id="necessario">* Preenchimento necessário.</p><p><label title="login" for="login">Login*: <input type="text"  name="name"  title="login" value="" autofocus  placeholder="Login" alt="login" required/></label></p>
 <p> 
-  <label>Senha*: <input type="password" name="senha" value=""  placeholder="Senha"/></label> </p><input type="submit" name="enviar" value="Login"/>
+  <label for="login" title="senha">Senha*: <input type="password" name="senha"   value=""  placeholder="Senha" title="senha" required/></label> </p><input type="submit" name="enviar" title="clique para logar" value="Login"/></p>
   </fieldset>
    </form>
    
-   
- <form action="controle.php" method="post"><fieldset>
-   <legend>Ainda não é cliente? Cadastre-se!</legend>
-   <p><label>Nome Completo*: <input type="text" value="" required="required" placeholder="Nome Completo" autofocus="autofocus" /></label></p>
+   <br/>
+ <form class="cadastrar" action="index.html" method="post" id="cadastro" title="cadastrar"><fieldset class="cadastrar">
+   <legend>Ainda não é cliente? Cadastre-se!</legend><p id="necessario2">* Preenchimento necessário.</p>
+   <p><label for="cadastro" title="Nome completo">Nome Completo*: <input  type="text" value="" required placeholder="Nome Completo"  title="Nome Completo"autofocus /></label></p>
    <p>
-     <label>E-mail*:   
-         <input type="text" value="" required="required" placeholder="E-mail" autofocus="autofocus" /></label></p>
-    <label>Login*: 
-      <input type="text" name="login" value="" /></label><br /> <label>Senha*:
-      <input type="password" name="senha" value="" /></label><br />
-      <label>Confirme a Senha*:
-      <input type="password" name="Csenha" value="" /></label><br /> 
-      <br /> 
-       <input type="submit" name="cadastrar" value="cadastrar"/> 
+     <label for="cadastro" title="Digitar email">E-mail*:   
+         <input type="text" value=""  title="Digitar email" required placeholder="E-mail" autofocus /></label></p><p>
+    <label for="cadastro" title="Nome para login">Login*: 
+      <input type="text" name="login" title="Nome para login" value="" placeholder="Digite um nome para o login" required /></label></p><p> <label title="Digitar a senha" for="cadastro">Senha*:
+      <input type="password"  name="senha" title="Digitar a senha" value="" placeholder="Digite uma senha"required /></label></p><p>
+      <label for="cadastro" title="Repetir a senha digitada">Confirme a Senha*:
+      <input type="password" name="Csenha" title="Repetir a senha digitada" value=""  placeholder="Digite novamente a senha"required /></label></p><p> 
+       <input type="submit"  name="cadastrar" value="cadastrar" title="Clique para cadastrar"/> </p>
        </fieldset>
        </form>
-        <br />
-<link id="links" /><table align="center" bordercolor="#999999" border="1"  cellpadding="5" cellspacing="0" ><td >
-<a href="index.html" alt="Retornar à pagina inicial" target="_self" >Retornar à pagina inicial</a>
-</td></table><br/>
-<!--Fim --Editado em 17-11-15-->
+<!-- fim acrescentado em 13-11-15-->
+<br />
+<link />
+
+
+
+<nav id="menu"><!-- Área de navegação-->
+<h1> Menu Principal </h1>
+<ul>
+	<li/><a href="index.html" title="Inicio"> Inicio </a>
+	<li/><a href="seguro-de-veiculos.html" title="Seguro de automóveis"  > Automôveis </a>
+	<li/><a href="seguro-para-imoveis.html" title="Seguro Residencial" > Rêsidencial </a>
+	<li/><a href="seguro-de-vida.html" title="Seguro Familiar"> Familiar </a>
+	<li/><a href="seguro-de-viagens.html" title="Seguro de Viagens"> Viagens </a>
+	</ul>
+</nav>
+<footer class="pe">
+<table  ><td >
+<a href="index.html" alt="Retornar à pagina inicial" title="Voltar a página inicial" target="_self" >Retornar à pagina inicial</a>
+</td></table>
+</footer>
+</div>
+
 </body>
 </html>
